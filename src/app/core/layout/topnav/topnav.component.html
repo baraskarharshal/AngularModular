@@ -1,0 +1,55 @@
+<mat-toolbar>
+
+    <div fxFlex fxLayout>
+      <div class="search-text-container">
+  
+        <input fxFlex class="search-text" [matAutocomplete]="auto" placeholder="Search Canditates">
+        <!-- <mat-icon>search</mat-icon> -->
+        <mat-autocomplete #auto="matAutocomplete">
+          <!-- <mat-option>Younis Zargar</mat-option>
+          <mat-option>Umer Zargar</mat-option>
+          <mat-option>Adil Khan</mat-option> -->
+          <!-- <mat-option *ngFor="let contact of filteredContacts | async" [value]="contact.name">
+            <app-portal-avatar [candidate]="contact"></app-portal-avatar>
+            <span>{{contact.firstName}} {{contact.lastName}}</span>
+          </mat-option> -->
+        </mat-autocomplete>
+      </div>
+  
+   
+      <div fxFlex fxLayout fxLayoutAlign="start center">
+        <button mat-button>Dashboard</button>
+        <button *ngFor="let dataTabel of dataTabels$ | async" [routerLink]="['/datatabels']" [routerLinkActive]="['active']" mat-button>{{dataTabel.name}}</button>
+         <button mat-button>Settings</button>
+      </div>
+  
+      <div fxLayout fxLayoutAlign="center center" [matMenuTriggerFor]="menu" class="loggedin-user">
+        <mat-icon [inline]="true">face</mat-icon>
+        <span>Younis</span>
+        <button mat-icon-button>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+  
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>lock</mat-icon>
+            <span>Lock Screen</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+          </button>
+  
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+  <!-- <div>
+    asas
+  </div> -->
+  <!-- <mat-divider></mat-divider> -->
+  

@@ -1,0 +1,15 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <h2>DataTabels</h2>
+</div>
+<mat-tab-group>
+  <mat-tab *ngFor="let dataTabel of dataTabels " label="{{dataTabel.name}}">
+    <br>
+    <div fxLayout="row">
+      <div fxFlex></div>
+      <button color="primary" mat-stroked-button (click)="onOpenCandidate(dataTabel.dataFields)">
+        <mat-icon>arrow_forward</mat-icon>
+        Create DataTabel
+      </button>
+    </div>
+  </mat-tab>
+</mat-tab-group>

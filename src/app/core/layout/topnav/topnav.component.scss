@@ -1,0 +1,50 @@
+.search-text-container {
+    border: 1px solid #dfe1e5;
+    // 1px solid #d0d0d0;
+    // 1px solid #dfe1e5
+    min-width: 412px;
+    font-size: 14px;
+    padding: 0px 12px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background: #ffffff;
+  
+    .search-text {
+      padding: 12px 0px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 30px;
+  
+      &:focus {
+        // border: 1px solid blue;
+      }
+    }
+  }
+  
+  .mat-toolbar {
+    background: #fdfdfd; //#eab716 -- try this color
+    color: rgba(0,0,0,.87);
+    border-bottom: 1px solid #eaeaea;
+    //  background: #24292e;
+    // color: #fff;
+    height: 54px;
+  }
+  
+  .loggedin-user {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    .mat-icon{
+      font-size:36px;
+      margin-right: 10px;
+    }
+  }
+  
+  .active{
+    background-color: #e8f0fe;
+    // border-radius: 30px;
+      font-weight: bold;
+  }

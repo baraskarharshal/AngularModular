@@ -1,0 +1,25 @@
+<div>
+    <!-- Header -->
+    <!-- <baxture-sales-header></baxture-sales-header> -->
+    <mat-sidenav-container autosize>
+        <!-- disableClose -->
+      <mat-sidenav style="padding: 20px;" #sidenav mode="over"  position="end">
+        <!-- <div style="">sdsdsd</div> -->
+        <template #sidebarContainer>
+        </template>
+      </mat-sidenav>
+   
+  
+      <mat-sidenav-content>
+  
+        <!-- Top Nav -->
+        <app-portal-topnav></app-portal-topnav>
+  
+        <div class="main-content">
+          <router-outlet></router-outlet>
+        </div>
+  
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  
